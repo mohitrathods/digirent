@@ -39,7 +39,7 @@ const Homee = () => {
       </Top>
 
       {/* bottom div */}
-      <Bottom id="toproducts">
+      {/* <Bottom id="toproducts">
         <EachCard>
           <Link id="clothes" to="/clothes" target="_blank">
             Clothes
@@ -69,7 +69,7 @@ const Homee = () => {
             Vehicles
           </Link>
         </EachCard>
-      </Bottom>
+      </Bottom> */}
       {/* <Firebasefetch /> */}
       <Footer />
     </MaintenantDiv>

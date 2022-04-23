@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "./about.css";
 import Footer from "./Footer";
+import ig from "../images/ig.png";
+import li from "../images/li.png";
 
 const About = () => {
   return (
@@ -42,13 +44,13 @@ const About = () => {
           <span>Rathod Mohit</span>
           <Icons>
             <a href="https://www.instagram.com/mohitsrathod_" target="_blank">
-              Instagram
+              Instagram <img src={ig} />
             </a>
             <a
               href="https://www.linkedin.com/in/mohit-rathod-83a147190"
               target="_blank"
             >
-              Linked In
+              Linked In <img src={li} />
             </a>
           </Icons>
           <span>Role : Frontend & Backend Integration with Firebase</span>
@@ -61,13 +63,13 @@ const About = () => {
               href="https://www.instagram.com/shivang_simaria/"
               target="_blank"
             >
-              Instagram
+              Instagram <img src={ig} />
             </a>
             <a
               href="https://www.linkedin.com/in/shivang-simaria-a2a008222"
               target="_blank"
             >
-              Linked In
+              Linked In <img src={li} />
             </a>
           </Icons>
           <span>Role : UI/UX Design of website</span>
@@ -80,13 +82,13 @@ const About = () => {
               href="https://www.instagram.com/vijay_patel_5690/"
               target="_blank"
             >
-              Instagram
+              Instagram <img src={ig} />
             </a>
             <a
               href="https://www.linkedin.com/in/vijay-sojitra-544569237"
               target="_blank"
             >
-              Linked In
+              Linked In <img src={li} />
             </a>
           </Icons>
           <span>Role : Website design Frontend</span>
@@ -99,10 +101,10 @@ const About = () => {
               href="https://www.linkedin.com/in/krunal-sakhiya-b2638a212"
               target="_blank"
             >
-              Instagram
+              Instagram <img src={ig} />
             </a>
             <a href="https://instagram.com/sk._24_" target="_blank">
-              Linked In
+              Linked In <img src={li} />
             </a>
           </Icons>
           <span>Role : Website Design Frontend</span>
@@ -159,18 +161,24 @@ const Container = styled.div`
 
 const Each = styled.div`
   border-radius: 8px;
-  border: 2px solid black;
+  box-shadow: 0px 0px 6px 1px rgba(133, 133, 133, 0.75);
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(133, 133, 133, 0.75);
+  -moz-box-shadow: 0px 0px 6px 1px rgba(133, 133, 133, 0.75);
   display: flex;
   flex-direction: column;
   margin: 10px;
   padding: 10px;
-  width: 280px;
+  width: 260px;
   height: 220px;
   background-color: white;
 
   span {
     font-size: 16px;
     padding: 10px;
+
+    :first-child {
+      font-weight: 500;
+    }
 
     :first-child {
       font-size: 22px;
@@ -197,4 +205,15 @@ const Each = styled.div`
 const Icons = styled.div`
   display: flex;
   flex-direction: column;
+
+  a {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin: 0px 6px 0px 6px;
+  }
 `;

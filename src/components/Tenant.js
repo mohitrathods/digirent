@@ -309,132 +309,133 @@ const Tenant = () => {
         {/*  */}
         {/* I HAVE EVERYTHING I WANNA GET FROM USER */}
         {/*  */}
+        <form>
+          <Inputdiv>
+            {/* <p>Tenant info.</p> */}
+            <span>Enter your name</span>
+            <input
+              placeholder="Your name"
+              type="text"
+              required
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
+            />
+          </Inputdiv>
+          <Inputdiv>
+            <span>Enter your Email</span>
+            <input
+              placeholder="Your Email"
+              type="text"
+              required
+              value={inputemail}
+              onChange={(event) => setInputemail(event.target.value)}
+            />
+          </Inputdiv>
+          <Inputdiv>
+            <span>Your Phone number</span>
+            <input
+              placeholder="Phone number"
+              type="text"
+              required
+              value={inputphone}
+              onChange={(event) => setInputphone(event.target.value)}
+            />
+          </Inputdiv>
+          <Inputdiv>
+            <span>Your Whatsapp number</span>
+            <input
+              placeholder="Whatsapp numner"
+              type="text"
+              required
+              value={inputwhatsapp}
+              onChange={(event) => setInputwhatsapp(event.target.value)}
+            />
+          </Inputdiv>
+          <Inputdiv>
+            <span>Write Message</span>
+            <textarea
+              value={inputmessage}
+              onChange={(event) => setInputmessage(event.target.value)}
+              required
+              placeholder="Write message"
+            />
+          </Inputdiv>
 
-        <Inputdiv>
-          {/* <p>Tenant info.</p> */}
-          <span>Enter your name</span>
-          <input
-            placeholder="Your name"
-            type="text"
-            required
-            value={input}
-            onChange={(event) => setInput(event.target.value)}
-          />
-        </Inputdiv>
-        <Inputdiv>
-          <span>Enter your Email</span>
-          <input
-            placeholder="Your Email"
-            type="text"
-            required
-            value={inputemail}
-            onChange={(event) => setInputemail(event.target.value)}
-          />
-        </Inputdiv>
-        <Inputdiv>
-          <span>Your Phone number</span>
-          <input
-            placeholder="Phone number"
-            type="text"
-            required
-            value={inputphone}
-            onChange={(event) => setInputphone(event.target.value)}
-          />
-        </Inputdiv>
-        <Inputdiv>
-          <span>Your Whatsapp number</span>
-          <input
-            placeholder="Whatsapp numner"
-            type="text"
-            required
-            value={inputwhatsapp}
-            onChange={(event) => setInputwhatsapp(event.target.value)}
-          />
-        </Inputdiv>
-        <Inputdiv>
-          <span>Write Message</span>
-          <textarea
-            value={inputmessage}
-            onChange={(event) => setInputmessage(event.target.value)}
-            required
-            placeholder="Write message"
-          />
-        </Inputdiv>
+          <Inputdiv>
+            {/* <p>Product info.</p> */}
+            <span>Product name</span>
+            <input
+              placeholder="product name"
+              type="text"
+              required
+              value={inputpname}
+              onChange={(event) => setInputpname(event.target.value)}
+            />
+          </Inputdiv>
+          <Inputdiv>
+            <span>Product description</span>
+            <textarea
+              placeholder="description"
+              required
+              value={inputpdes}
+              onChange={(event) => setInputpdes(event.target.value)}
+            />
+          </Inputdiv>
+          <Inputdiv>
+            <span>Product price</span>
+            <input
+              placeholder="price/hours,days"
+              type="text"
+              required
+              value={inputpprice}
+              onChange={(event) => setInputpprice(event.target.value)}
+            />
+          </Inputdiv>
+          <Inputdiv>
+            <select
+              value={selected}
+              onChange={(event) => setSelected(event.target.value)}
+            >
+              <option>Select</option>
+              <option value="Clothes">Clothes</option>
+              <option value="Video Shooting">Videoshooting equipments</option>
+              <option value="Books">Books</option>
+              <option value="Power Tools">Power tools</option>
+              <option value="Vehicles">Vehicles</option>
+            </select>
+            <span>Selected category is</span>
+            <p>{selected}</p>
+          </Inputdiv>
 
-        <Inputdiv>
-          {/* <p>Product info.</p> */}
-          <span>Product name</span>
-          <input
-            placeholder="product name"
-            type="text"
-            required
-            value={inputpname}
-            onChange={(event) => setInputpname(event.target.value)}
-          />
-        </Inputdiv>
-        <Inputdiv>
-          <span>Product description</span>
-          <textarea
-            placeholder="description"
-            required
-            value={inputpdes}
-            onChange={(event) => setInputpdes(event.target.value)}
-          />
-        </Inputdiv>
-        <Inputdiv>
-          <span>Product price</span>
-          <input
-            placeholder="price/hours,days"
-            type="text"
-            required
-            value={inputpprice}
-            onChange={(event) => setInputpprice(event.target.value)}
-          />
-        </Inputdiv>
-        <Inputdiv>
-          <select
-            value={selected}
-            onChange={(event) => setSelected(event.target.value)}
-          >
-            <option>Select</option>
-            <option value="Clothes">Clothes</option>
-            <option value="Video Shooting">Videoshooting equipments</option>
-            <option value="Books">Books</option>
-            <option value="Power Tools">Power tools</option>
-            <option value="Vehicles">Vehicles</option>
-          </select>
-          <span>Selected category is</span>
-          <p>{selected}</p>
-        </Inputdiv>
-
-        <Inputdiv>
-          <span>add your product images</span>
-          {/* <input
+          <Inputdiv>
+            <span>add your product images</span>
+            {/* <input
             placeholder="product category"
             type="file"
             required
             value={inputpimages}
             onChange={(event) => setInputpimages(event.target.value)}
           /> */}
-          {/* <ImageUpload /> */}
+            {/* <ImageUpload /> */}
 
-          {/* <div> */}
-          <progress value={progress} max="100" />
-          {/* <br />
+            {/* <div> */}
+            <progress value={progress} max="100" />
+            {/* <br />
             <br /> */}
-          <input type="file" onChange={handleChange} />
-          <span>please click on upload after selecting a image</span>
-          <button onClick={handleUpload}>Upload Image</button>
-          {/* <br />
+            <input type="file" onChange={handleChange} />
+            <span>please click on upload after selecting a image</span>
+            <button onClick={handleUpload}>Upload Image</button>
+            {/* <br />
             {url}
             <br />
             <img src={url} alt="firebase-image" />
           </div> */}
-        </Inputdiv>
+          </Inputdiv>
 
-        <Button>
-          <button onClick={sendData}>Submit</button>
-        </Button>
+          <Button>
+            <button onClick={sendData}>Submit</button>
+          </Button>
+        </form>
       </BottomdivForm>
       <Footer />
     </MainDivision>

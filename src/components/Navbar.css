@@ -89,3 +89,8 @@
   -moz-box-shadow: 2px 2px 1px 0px rgba(92, 92, 92, 0.75);
   transition: 0.2s;
 }
+
+.become_tenant {
+  color: #d93936;
+  font-weight: 500;
+}

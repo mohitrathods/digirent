@@ -37,7 +37,9 @@ const Navbar = () => {
         </DropDown>
 
         <Links>
-          <Link to="/tenant">BecomeTenant</Link>
+          <Link to="/tenant">
+            <span className="become_tenant">BecomeTenant </span>
+          </Link>
 
           <Link to="/about">About</Link>
 
