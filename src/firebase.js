@@ -18,6 +18,7 @@ import "firebase/compat/storage";
 //   measurementId: "G-V6MTT6W355",
 // };
 
+/**MAIN WORKING FIREBASE OLD*/
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyAHW2t3rJY5DQDwlGj8sEr9ENs4co_mCI0",
   authDomain: "deproject-8dc4f.firebaseapp.com",
@@ -28,6 +29,17 @@ const firebaseApp = firebase.initializeApp({
   appId: "1:701074642615:web:3accda05680c76eb751f32",
   measurementId: "G-V6MTT6W355",
 });
+
+/**AFTER DB CHANGED API */
+// const firebaseApp = firebase.initializeApp({
+//   apiKey: "AIzaSyDP8klRWLHnYPr_g-srXUMC0BQr9pN4--c",
+//   authDomain: "digirent-407f6.firebaseapp.com",
+//   projectId: "digirent-407f6",
+//   storageBucket: "digirent-407f6.appspot.com",
+//   messagingSenderId: "532251216299",
+//   appId: "1:532251216299:web:2a5fd5272aedd1f64deaee",
+//   measurementId: "G-909J3YKK93",
+// });
 
 const db = firebaseApp.firestore();
 const auth = firebase.auth();

@@ -22,7 +22,6 @@ const Homee = () => {
           <span className="spanone">
             Discover a new way to get products on Rent
           </span>
-
           <span className="spantwo">Products on Rent</span>
 
           <span>

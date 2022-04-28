@@ -150,7 +150,7 @@ const MainDiv = styled.div`
 
   a {
     margin: 20px;
-    padding: 10px;
+    padding: 0px;
     color: #d93936;
     text-decoration: none;
     font-size: 26px;

@@ -6,6 +6,7 @@ import firebase from "@firebase/app-compat";
 import "./tenant.css";
 import Footer from "./Footer";
 import ImageUpload from "../firebase_upload/ImageUpload";
+import "./tenant.css";
 
 const Tenant = () => {
   /** if else for switching collections */
@@ -248,8 +249,8 @@ const Tenant = () => {
     setImage(null);
   };
 
-  function alertMsg() {
-    alert("form submitted successfully");
+  function clearAll() {
+    alert("data submitted successfully");
     setInput("");
     setInputemail("");
     setInputphone("");
@@ -447,7 +448,9 @@ const Tenant = () => {
         </Inputdiv>
 
         <Button>
-          <button onClick={sendData && alertMsg}>Submit</button>
+          <button onClick={sendData}>
+            <button onClick={clearAll}>Submit</button>
+          </button>
         </Button>
         {/* </form> */}
       </BottomdivForm>
@@ -654,7 +657,7 @@ const Inputdiv = styled.div`
 `;
 
 const Button = styled.div`
-  button {
+  button :first-child {
     padding: 8px;
     margin: 8px;
     color: black;
