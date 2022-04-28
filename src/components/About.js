@@ -169,7 +169,7 @@ const Each = styled.div`
   margin: 10px;
   padding: 10px;
   width: 260px;
-  height: 220px;
+  height: 240px;
   background-color: white;
 
   span {
