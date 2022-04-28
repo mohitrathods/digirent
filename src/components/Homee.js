@@ -7,6 +7,11 @@ import UploadtoFb from "../firebase_upload/UploadtoFb";
 import home from "../images/home.png";
 import tiger from "../images/tiger.jpg";
 import Footer from "./Footer";
+import b from "../images/b.webp";
+import vs from "../images/vs.webp";
+import pt from "../images/pt.jpg";
+import c from "../images/c.jpg";
+import v from "../images/v.jpg";
 
 const Homee = () => {
   return (
@@ -29,7 +34,7 @@ const Homee = () => {
           <p>Get item on Rent from our website </p>
 
           <Buttons>
-            <a href="#toproducts">Order Now</a>
+            <a href="#toproducts">Get products</a>
             <Link to="/tenant">Become tenant</Link>
           </Buttons>
         </Left>
@@ -39,37 +44,46 @@ const Homee = () => {
       </Top>
 
       {/* bottom div */}
-      {/* <Bottom id="toproducts">
+      <Bottom id="toproducts">
         <EachCard>
+          <img src={c} />
           <Link id="clothes" to="/clothes" target="_blank">
             Clothes
           </Link>
         </EachCard>
 
         <EachCard>
+          <img src={vs} />
+
           <Link id="videoshooting" to="/video" target="_blank">
             Video Shooting Equpments
           </Link>
         </EachCard>
 
         <EachCard>
+          <img src={b} />
+
           <Link id="books" to="/books" target="_blank">
             Books
           </Link>
         </EachCard>
 
         <EachCard>
+          <img src={pt} />
+
           <Link id="powertools" to="/powertools" target="_blank">
             Power Tools
           </Link>
         </EachCard>
 
         <EachCard>
+          <img src={v} />
+
           <Link id="vehicles" to="/vehicles" target="_blank">
             Vehicles
           </Link>
         </EachCard>
-      </Bottom> */}
+      </Bottom>
       {/* <Firebasefetch /> */}
       <Footer />
     </MaintenantDiv>
@@ -193,24 +207,39 @@ const Bottom = styled.div`
 
 const EachCard = styled.div`
   display: flex;
-
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 0px 10px 2px rgba(179, 179, 179, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(179, 179, 179, 0.75);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(179, 179, 179, 0.75);
+  margin: 10px;
+  padding: 0px;
+  border-radius: 10px;
+  width: 400px;
+  background-color: white;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
 
   a {
     display: flex;
     width: fit-content;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     background-color: white;
     transition: 0.4s;
     box-shadow: 0px 0px 10px 2px rgba(179, 179, 179, 0.75);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(179, 179, 179, 0.75);
     -moz-box-shadow: 0px 0px 10px 2px rgba(179, 179, 179, 0.75);
     text-decoration: none;
-    font-size: 26px;
-    color: gray;
+    font-size: 20px;
+    color: black;
     border-radius: 10px;
     font-weight: 400;
 
