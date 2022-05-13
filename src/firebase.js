@@ -20,15 +20,28 @@ import "firebase/compat/storage";
 
 /**MAIN WORKING FIREBASE OLD*/
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyAHW2t3rJY5DQDwlGj8sEr9ENs4co_mCI0",
-  authDomain: "deproject-8dc4f.firebaseapp.com",
-  databaseURL: "https://deproject-8dc4f-default-rtdb.firebaseio.com",
-  projectId: "deproject-8dc4f",
-  storageBucket: "deproject-8dc4f.appspot.com",
-  messagingSenderId: "701074642615",
-  appId: "1:701074642615:web:3accda05680c76eb751f32",
-  measurementId: "G-V6MTT6W355",
+ // apiKey: "AIzaSyAHW2t3rJY5DQDwlGj8sEr9ENs4co_mCI0",
+  //authDomain: "deproject-8dc4f.firebaseapp.com",
+  //databaseURL: "https://deproject-8dc4f-default-rtdb.firebaseio.com",
+  //projectId: "deproject-8dc4f",
+  //storageBucket: "deproject-8dc4f.appspot.com",
+  //messagingSenderId: "701074642615",
+  //appId: "1:701074642615:web:3accda05680c76eb751f32",
+  //measurementId: "G-V6MTT6W355",
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+//const firebaseConfig = {
+  apiKey: "AIzaSyDaM3qYujdhIy2ETinh4rACQg_vtEb5Ehs",
+  authDomain: "digirent-new.firebaseapp.com",
+  projectId: "digirent-new",
+  storageBucket: "digirent-new.appspot.com",
+  messagingSenderId: "243524388849",
+  appId: "1:243524388849:web:87b50b8d8e4b433d2a2650",
+  measurementId: "G-W1ZLT87TLE"
+//};
 });
+
+/**MAIN WORKING FIREBASE NEW */
 
 /**AFTER DB CHANGED API */
 // const firebaseApp = firebase.initializeApp({
